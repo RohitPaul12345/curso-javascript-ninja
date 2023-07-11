@@ -12,9 +12,9 @@ correto da variável ou função chamada.
 function myFunction() {
     console.log( 'Na função `myFunction`, o primeiro número é', number1 );
     console.log( 'Na função `myFunction`, o segundo número é', number2 );
-    var number1 = 10;
+    let number1 = 10;
     return number1 + number2;
-    var number2 = 20;
+    let number2 = 20;
 }
 myFunction();
 
@@ -23,11 +23,11 @@ myFunction();
 */
 function myFunction2() {
     console.log( 'A soma de 10 e 20 é igual a', sum ? sum() : undefined );
-    var sum = function sum() {
+    let sum = function sum() {
         return number1 + number2;
     };
-    var number1 = 10;
-    var number2 = 20;
+    let number1 = 10;
+    let number2 = 20;
     return sum();
 }
 myFunction2();
@@ -37,9 +37,9 @@ myFunction2();
 */
 function myFunction3() {
     console.log( 'A soma de 40 e 50 é igual a', sum() );
-    var number2 = 50;
+    let number2 = 50;
     console.log( 'Na função myFunction3, number1 é igual a', number1 );
-    var number1 = 40;
+    let number1 = 40;
     return sum();
     function sum() {
         return number1 + number2;
